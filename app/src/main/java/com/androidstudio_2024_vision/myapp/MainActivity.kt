@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var baiduTranslateService: BaiduTranslateService
     private val TAG = "MainActivity"
     private lateinit var  iv_copy_tx :ImageView
-    private lateinit var voice:ImageView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -163,11 +163,6 @@ class MainActivity : AppCompatActivity() {
             val result = tv_result.text.toString()
             myClipboard!!.setPrimaryClip(ClipData.newPlainText("text", result))
             showMsg("已复制")
-        }
-        voice = contentMainBinding.ivVoice
-        voice.setOnClickListener {
-            val intent= Intent(this,SpeechActivity::class.java)
-            startActivity(intent)
         }
     }
     private fun transition() {

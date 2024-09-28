@@ -43,23 +43,23 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.3"
     }
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
-    }
-    sourceSets {
-        getByName("main") {
-            /*jni {
-                srcDirs("src\\main\\jni", "src\\main\\jni")
-            }*/
-            // 在这里配置main source set
-            jniLibs.srcDirs("libs")
-            jni {
-                srcDirs("src\\main\\jni", "src\\main\\jniLibs")
-            }
-        }
-    }
+//    packaging {
+//        resources {
+//            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+//        }
+//    }
+//    sourceSets {
+//        getByName("main") {
+//            /*jni {
+//                srcDirs("src\\main\\jni", "src\\main\\jni")
+//            }*/
+//            // 在这里配置main source set
+//            jniLibs.srcDirs("libs")
+//            jni {
+//                srcDirs("src\\main\\jni", "src\\main\\jniLibs")
+//            }
+//        }
+//    }
 }
 
 dependencies {
@@ -88,6 +88,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    //讯飞语音识别库
-    implementation(files("libs/Msc.jar"))
+//    //讯飞语音识别库
+//    implementation(files("libs/Msc.jar"))
 }

@@ -18,7 +18,7 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         maven{ url = uri("https://jitpack.io")}
-        maven { url =uri("https://maven.xfyun.cn/") } // 添加科大讯飞的 Maven 仓库
+//        maven { url =uri("https://maven.xfyun.cn/") } // 添加科大讯飞的 Maven 仓库
     }
 }
 
